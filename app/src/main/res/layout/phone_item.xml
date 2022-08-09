@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="4dp"
+    android:layout_marginHorizontal="20dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center"
+                android:text="999933333"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/cell"
+            android:src="@drawable/add_icon"/>
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/send"
+            android:src="@drawable/add_icon"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB300"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+   <androidx.recyclerview.widget.RecyclerView
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       android:visibility="gone"
+       android:layout_width="200dp"
+       android:layout_gravity="center"
+       android:layout_height="400dp"
+       android:id="@+id/bayroqlar_rec"/>
+<LinearLayout
+    android:id="@+id/layout_edit"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<TextView
+    android:gravity="center"
+    android:textColor="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:padding="20dp"
+
+    android:layout_marginBottom="30sp"
+    android:textAllCaps="true"
+    android:text="Kontakt qo'shish"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="50dp"
+            android:layout_height="100dp">
+
+            <ImageView
+
+                android:id="@+id/img_dilag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/white" />
+
+
+
+        </androidx.cardview.widget.CardView>
+<RadioGroup
+    android:gravity="start|center"
+    android:id="@+id/radio_group"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RadioButton
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="erkak"
+        android:layout_weight="1"/>
+    <RadioButton
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="ayol"
+        android:layout_weight="1"/>
+
+</RadioGroup>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:id="@+id/title_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:hint="FirstName" />
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/textLastName"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:hint="Last Name" />
+
+<!--   -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:paddingVertical="10dp"
+            android:id="@+id/bekor_qilish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+           android:background="#F4511E"
+            android:text="bekor qilish"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:background="#43A047"
+            android:id="@+id/saqlash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center"
+
+            android:text="saqlash"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
